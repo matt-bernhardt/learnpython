@@ -20,7 +20,7 @@ class Example(object):
     # Methods
     def __init__(self, total):
         super(Example, self).__init__()
-        self.total = 0
+        self.total = total
 
     def Increment(self, value):
         self.total += value

@@ -16,15 +16,15 @@ from example import Example
 class TestExample(unittest.TestCase):
 
     def setUp(self):
-        self.foo = Example(0)
+        self.foo = Example(1)
 
     def test_Increment(self):
-        self.assertEqual(self.foo.Increment(1), 1)
-        self.assertEqual(self.foo.Increment(2), 3)
+        self.assertEqual(self.foo.Increment(1), 2)
+        self.assertEqual(self.foo.Increment(2), 4)
 
     def test_Decrement(self):
-        self.assertEqual(self.foo.Decrement(1), -1)
-        self.assertEqual(self.foo.Decrement(2), -3)
+        self.assertEqual(self.foo.Decrement(1), 0)
+        self.assertEqual(self.foo.Decrement(2), -2)
 
 if __name__ == "__main__":
     unittest.main()
