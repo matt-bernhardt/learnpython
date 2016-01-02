@@ -1,0 +1,15 @@
+sudo: false
+notifications:
+  email: false
+language: python
+env:
+  - TOX_ENV=py27
+  - TOX_ENV=coveralls
+install:
+  - pip install tox
+services:
+  - mysql
+before_script:
+  - mysql -e 'create database learnpython;'
+script:
+  - tox -e $TOX_ENV
