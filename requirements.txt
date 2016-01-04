@@ -1,2 +1,2 @@
 xlrd==0.9.4
-mysql-connector-python==2.0.4
+mysql-connector-python-rf==2.1.3
